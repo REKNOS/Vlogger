@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import ViewVlog from './components/viewVlog';
 
 
 
@@ -22,6 +23,7 @@ function App() {
          <Route element={<Signup />} path="Signup" /> 
          <Route element={<AddVlog />} path="Addvlog" />
          <Route element={<BrowseVlog />} path="BrowseVlog" />   
+         <Route element={<ViewVlog />} path="view/:id" />   
          </Routes>   
       </BrowserRouter>
   

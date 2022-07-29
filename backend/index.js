@@ -26,6 +26,8 @@ app.use('/user', userRouters);
 app.use('/vlog', vlogRouters);
 app.use('/util', utilRouter);
 
+app.use(express.static('./static/uploads'))
+
 
 app.get("/home", (req, res) => {
   res.send("Hello express");
