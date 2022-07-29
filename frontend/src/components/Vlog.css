@@ -1,0 +1,19 @@
+header {
+    padding: 10% 0;
+    background: linear-gradient(to bottom, #0000007e, #000000),
+      url(https://cdn.britannica.com/54/155954-050-6568A963/massif-Mount-Everest-Himalayas-Nepal.jpg);
+    background-attachment: fixed;
+    transition-duration: 1s;
+  }
+  .mycard {
+    transition-duration: 300ms;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.274);
+    color :black
+  
+  }
+
+  .mycard:hover {
+  
+    transform: translateY(-50px);
+    box-shadow: 1px 5px 5px 3px rgba(0, 0, 0, 0.137);
+  }

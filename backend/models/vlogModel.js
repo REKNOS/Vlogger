@@ -8,4 +8,4 @@ const myschema = new Schema({
      createdAt : String,
 });
 
-module.exports = model('User',myschema);
+module.exports = model('Vlogs',myschema);

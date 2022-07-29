@@ -1,18 +1,15 @@
 const express = require("express");
 
-
-
 const app = express();
 
-
-
 // on function is used recieved
-
 
 const port = 5000;
 
 // importing the userRouter
 const userRouters = require("./routers/userRouters");
+const vlogRouters = require("./routers/vlogRouter");
+const utilRouter = require("./routers/utils");
 const cors = require('cors')
 
 
@@ -26,6 +23,8 @@ app.use(express.json());
 
 //middlewares - to intercept the request
 app.use('/user', userRouters);
+app.use('/vlog', vlogRouters);
+app.use('/util', utilRouter);
 
 
 app.get("/home", (req, res) => {
@@ -37,3 +36,7 @@ app.get("/home", (req, res) => {
 app.get(port, () => {
   console.log("the server has started");
 });
+
+app.listen(port, () => {
+  console.log('server started');
+})

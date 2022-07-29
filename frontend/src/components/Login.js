@@ -44,7 +44,6 @@ password: Yup.string().min(4, 'Password should be longer than 4 characters').req
                   error={Boolean(errors.email) && touched.email}                 
                    helperText={errors.email}
                 />
-
                 <TextField
                   sx={{ mt: 3 }}
                   fullWidth
@@ -57,7 +56,6 @@ password: Yup.string().min(4, 'Password should be longer than 4 characters').req
                   error={Boolean(errors.password) && touched.password}                 
                    helperText={errors.password}
                 />
-
                 <Button
                   type="submit"
                   fullWidth
@@ -69,9 +67,7 @@ password: Yup.string().min(4, 'Password should be longer than 4 characters').req
               </form>
                 )
               }
-              </Formik>
-
-              
+              </Formik> 
             </div>
           </div>
         </div>
